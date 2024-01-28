@@ -5,8 +5,6 @@ function getFlags() {
 	var totalFlags = 0
 	const flagNum = 7; //This is to indicate the number of flags in the list + 1, for some reason using length+1 slows the page down massively
 	
-	alert(flags)
-	
 	for (let i = 0; i < flagNum; i++) {
 		if (flags[i] != null) {
 			totalFlags += 1
