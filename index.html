@@ -25,27 +25,26 @@
             </div>
             <div>
                 <input type="text" value="admin" readonly disabled>
-                <input type="text" placeholder="Password" id="password">
+                <input type="text" placeholder="Password" id="password" autocomplete="off">
                 <button type="button" onclick="login()">Submit</button>
-				
-			<script name="Login">
-			
-				function login() {
-				var passwordInput = document.getElementById("password").value;
-				var password = "Password123";
-				
-				if (passwordInput == password) {
-					addFlag()
-					window.location.href = "pages/flag2.html";
-				}
-				
-				else {
-					alert("Incorrect Password")
-				}
-				
-			}
-			</script>
-				
+	
+                <script name="Login">
+                
+                    function login() {
+                    var passwordInput = document.getElementById("password").value;
+                    var password = "Password123";
+                    
+                    if (passwordInput == password) {
+                        addFlag()
+                        window.location.href = "pages/flag2.html";
+                    }
+                    
+                    else {
+                        alert("Incorrect Password")
+                    }
+                    
+                }
+                </script>
             </div>
         </div>
     </div>
