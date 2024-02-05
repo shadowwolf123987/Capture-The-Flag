@@ -54,6 +54,7 @@ body{
     margin-right: 5px;
 }
 
+/* Flag 1 */
 .loginDiv{
     border-radius: 15px;
     border: solid 1px white;
@@ -149,6 +150,7 @@ body{
     background-color: #770000;
 }
 
+/* Flag 2 */
 .questions{
     display: flex;
     flex-direction: column;
@@ -195,4 +197,13 @@ body{
     transition: 0.1s;
     color: white;
     background-color: #770000;
+}
+
+/* Flag 4 */
+.hiddenButton {
+    position: absolute;
+    bottom: 125px;
+    right: 290px;
+    width: 45px;
+    opacity: 0;
 }
