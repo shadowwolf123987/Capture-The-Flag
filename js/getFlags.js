@@ -16,16 +16,6 @@ function getFlags() {
 return totalFlags;
 }
 
-function redirectPage() {
-	var flags = document.getElementById('counter').innerHTML;
-
-	if(window.location.href == 'test') {
-		window.location.href = "pages/flag"+flags+".html";
-	}
-
-	window.location.href = "pages/flag"+flags+".html";
-}
-
 function reset() {
 localStorage.setItem("1HHHGGfW2aBCH", 0);
 localStorage.setItem("2T2yXjXQEMb01", 0);
