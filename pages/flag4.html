@@ -9,23 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="../js/getFlags.js"></script>
-	<script type="text/javascript" src="../js/4MXKQ1EZ0yv6A.js"></script>
+	<script type="text/javascript" src="../js/1HHHGGfW2aBCH.js"></script>
 </head>
 <body onload="getFlags()">
     <div class="flagCounter">
         <img src="../images/flag-triangle-svgrepo-com.svg">
         <p id="counter">0</p>
     </div>
-	<div>
-		<button class="hiddenButton" type="button" onclick="redirect()">Click Me</button>
-	</div>
+    <div class="loginDiv">
+        <div class="content">
+            <div>            
+                <img src="../images/calculatorIcon.svg">
+                <h2>Welcome!</h2>
+                <p>Please <span>login</span> to continue.</p>
+            </div>
+            <div>
+                <input type="number" placeholder="Enter PIN" id="pinInput" autocomplete="off">
+                <button type="button" onclick="login()">Submit</button>
+	
+                <script>
 
-    <script>
-        function redirect() {
-            addFlag()
-            window.location.href = "flag5.html"
-        }
-    </script>
+                    function login() {
+                    var pinInput = document.getElementById("pinInput").value;
+                    var pin = Math.floor((Math.random() * 69)+1)
+                    
+                    if (pinInput == pin) {
+                        addFlag()
+                        window.location.href = "flag5.html";
+                    }
+                    
+                }
 
+                login()
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
