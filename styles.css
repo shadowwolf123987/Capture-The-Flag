@@ -54,6 +54,14 @@ body{
     margin-right: 5px;
 }
 
+.skipBtn {
+    margin: 0 10px; padding: 0 25px;
+}
+
+.resetBtn {
+    margin: 0 5px; padding: 0 5px;
+}
+
 /* Flag 1 */
 .loginDiv{
     border-radius: 15px;
@@ -174,7 +182,7 @@ body{
     background-color: var(--colour3);
 }
 
-.questions button{
+button{
     width: 100%;
     height: 35px;
     margin-top: 19px;
@@ -187,13 +195,13 @@ body{
     background-color: var(--colour3);
 }
 
-.questions button:hover{
+button:hover{
     transition: 0.2s;
     color: white;
     background-color: #ff0000;
 }
 
-.questions button:active{
+button:active{
     transition: 0.1s;
     color: white;
     background-color: #770000;

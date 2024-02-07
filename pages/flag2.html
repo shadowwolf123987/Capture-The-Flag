@@ -15,28 +15,9 @@
     <div class="flagCounter">
         <img src="../images/flag-triangle-svgrepo-com.svg">
         <p id="counter">0</p>
+        <button class="skipBtn"  onclick="skip()">Skip</button>
+        <button class="resetBtn" onclick="reset()">Reset</button>
     </div>
-
-    <script>
-
-        const answerOne = 'Virtual Private Network';
-        const answerTwo = 'Domain Name Server';
-        const answerThree = 'Structured Query Language';
-
-        const checkAnswers = function() {
-            let userAnswerOne = document.getElementById('one').value;
-            let userAnswerTwo = document.getElementById('two').value;
-            let userAnswerThree = document.getElementById('three').value;
-
-            if (userAnswerOne == answerOne && userAnswerTwo == answerTwo && userAnswerThree == answerThree) {
-                addFlag();
-                window.location.href = "flag3.html";console.log(userAnswerOne)
-            }
-            else{
-                console.log('Wrong')
-            }
-        }
-    </script>
     
     <div class="questions">
         <h1>Quiz</h1>
@@ -48,5 +29,29 @@
         <input type="text" placeholder="..." id="three">
         <button type="button" onclick="checkAnswers()">Submit</button>
     </div>
+
+    <script name="questions">
+
+        const answerOne = 'virtual private network';
+        const answerTwo = 'domain name server';
+        const answerThree = 'structured query language';
+
+        const checkAnswers = function() {
+            let userAnswerOne = document.getElementById('one').value.toLowerCase();
+            let userAnswerTwo = document.getElementById('two').value.toLowerCase();
+            let userAnswerThree = document.getElementById('three').value.toLowerCase();
+
+
+
+            if (userAnswerOne == answerOne && userAnswerTwo == answerTwo && userAnswerThree == answerThree) {
+                addFlag();
+                window.location.href = "flag3.html";
+            }
+            else{
+                window.alert("Incorrect")
+            }
+        }
+    </script>
+
 </body>
 </html>

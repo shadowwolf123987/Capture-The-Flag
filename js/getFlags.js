@@ -26,3 +26,24 @@ localStorage.setItem("6HFgA8TNxYFrb", 0);
 
 window.location.href = "../index.html"
 }
+
+function skip() {
+
+	if(window.location.href.includes("index")) {
+		window.location.href = "pages/flag2.html"
+	}
+
+	if(window.location.href.includes("flag5.html")) {
+		window.location.href = "congrats.html"
+	}
+
+	else if(window.location.href.includes("flag")) {
+		var page = window.location.href
+		page = page.split("flag")
+		page = page[1].replace(".html","")
+		page = parseInt(page)+1
+
+		window.location.href = "flag"+(page)+".html"
+	}
+
+	}
