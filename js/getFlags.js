@@ -24,7 +24,7 @@ localStorage.setItem("4MXKQ1EZ0yv6A", 0);
 localStorage.setItem("5fcyR2QUg0ivi", 0);
 localStorage.setItem("6HFgA8TNxYFrb", 0);
 
-window.location.href = "Capture-The-Flag/"
+window.location.href = "/"
 }
 
 function skip() {
