@@ -42,7 +42,7 @@ function skip() {
 	}
 
 	else{
-		window.location.href = "pages/flag2.html";
+		window.location.href = "Capture-The-Flag/pages/flag2.html";
 	}
 
 	}

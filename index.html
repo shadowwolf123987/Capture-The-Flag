@@ -15,7 +15,7 @@
     <div class="flagCounter">
         <img src="images/flag-triangle-svgrepo-com.svg">
         <p id="counter">0</p>
-        <button class="skipBtn"  onclick="skip()">Skip</button>
+        <button class="skipBtn"  onclick="skipIndex()">Skip</button>
         <button class="resetBtn" onclick="reset()">Reset</button>
     </div>
     <div class="loginDiv">
@@ -31,7 +31,7 @@
                 <button type="button" onclick="login()">Submit</button>
 	
                 <script name="Login">
-                
+                    
                     function login() {
                     var passwordInput = document.getElementById("password").value;
                     var password = "Password123";
@@ -45,6 +45,10 @@
                         alert("Incorrect Password")
                     }
                     
+                }
+
+                function skipIndex() {
+                    window.location.href = "pages/flag2.html";
                 }
                 </script>
             </div>
