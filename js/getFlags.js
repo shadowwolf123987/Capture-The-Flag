@@ -24,15 +24,10 @@ localStorage.setItem("4MXKQ1EZ0yv6A", 0);
 localStorage.setItem("5fcyR2QUg0ivi", 0);
 localStorage.setItem("6HFgA8TNxYFrb", 0);
 
-window.location.href = "../index.html"
+window.location.href = "/"
 }
 
 function skip() {
-
-	if(window.location.href.includes("index")) {
-		window.location.href = "pages/flag2.html"
-	}
-
 	if(window.location.href.includes("flag5.html")) {
 		window.location.href = "congrats.html"
 	}
@@ -44,6 +39,10 @@ function skip() {
 		page = parseInt(page)+1
 
 		window.location.href = "flag"+(page)+".html"
+	}
+
+	else{
+		window.location.href = "/pages/flag2.html"
 	}
 
 	}
